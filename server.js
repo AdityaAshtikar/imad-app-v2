@@ -5,40 +5,37 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles=
-{
-var articleOne:{
-    title: 'Article One | Aditya Ashtikar',
-    heading: 'Article One',
-    date: 'Jun 26 2017',
-    content: 
-    `'<p>
-            This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
-        </p>
-        <p>
-            This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
-        </p>
-     `
-},
-var articleTwo:{
-    title: 'Article Two | Aditya Ashtikar',
-    heading: 'Article Two',
-    date: 'Jun 28 2017',
-    content: 
-    `'<p>
-            This is the content of my Second article.
-    </p>`
-},
-var articleThree:{
-    title: 'Article Three | Aditya Ashtikar',
-    heading: 'Article Three',
-    date: 'Jun 29 2017',
-    content: 
-    `<p>
-        This is the content of my third article.
-    </p>`
-    
-}
+var articles={
+    var articleOne:{
+        title: 'Article One | Aditya Ashtikar',
+        heading: 'Article One',
+        date: 'Jun 26 2017',
+        content: 
+        `<p>
+                This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
+            </p>
+            <p>
+                This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
+            </p>
+    },
+    var articleTwo: {
+        title: 'Article Two | Aditya Ashtikar',
+        heading: 'Article Two',
+        date: 'Jun 28 2017',
+        content: 
+        `<p>
+                This is the content of my Second article.
+        </p>`
+    },
+    var articleThree: {
+        title: 'Article Three | Aditya Ashtikar',
+        heading: 'Article Three',
+        date: 'Jun 29 2017',
+        content: 
+        `<p>
+            This is the content of my third article.
+        </p>`
+    }
 };
 function createTemplate(data){
     var title=data.title;
