@@ -27,9 +27,18 @@ var articleTwo:{
     content: 
     `'<p>
             This is the content of my Second article.
-    </p>
+    </p>`
 },
-var articleThree:{}
+var articleThree:{
+    title: 'Article Three | Aditya Ashtikar',
+    heading: 'Article Three',
+    date: 'Jun 29 2017',
+    content: 
+    `<p>
+        This is the content of my third article.
+    </p>`
+    
+}
 };
 function createTemplate(data){
     var title=data.title;
