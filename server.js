@@ -17,9 +17,7 @@ var articleOne={
         <p>
             This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
         </p>
-        <p>
-            This is the fcontent of my first article.This is the fcontent of my first article.This is the fcontent of my first article.This is the fcontent of my first article.This is the fcontent of my first article.This is the fcontent of my first article.
-        </p>' `
+     `
 }
 function createTemplate(data){
     var title=data.title;
