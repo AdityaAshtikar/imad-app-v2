@@ -74,23 +74,15 @@ function createTemplate(data){
     </body>
     
     </html>
-    `
-return htmlTemplate
+    `;
+return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/:articleName', function(req,res){
-  res.send(articles(articleName))
-});
-
-app.get('/article-two', function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three', function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+  res.send(articles(articleName));
 });
 
 app.get('/ui/style.css', function (req, res) {
